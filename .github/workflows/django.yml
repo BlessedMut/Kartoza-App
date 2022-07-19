@@ -30,6 +30,9 @@ jobs:
       run: |
         sudo systemctl start postgresql.service
         sudo -u postgres createuser -s runner
+    - name: Install GDAL Libraries
+      run: |
+        sudo apt-get install binutils libproj-dev gdal-bin
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
