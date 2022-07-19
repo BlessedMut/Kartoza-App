@@ -39,8 +39,7 @@ jobs:
         pip install -r requirements.txt
     - name: Grant Database Privileges
       run: |
-        sudo -u postgres psql
-        grant all privileges on all tables in schema public to kartoza;
+        psql -c 'GRANT ALL PRIVILEGES ON ALL TABLES in schema PUBLIC TO kartoza;'
     - name: Run Tests
       env:
         SECRET_KEY: ${{secrets.SECRET_KEY}}
