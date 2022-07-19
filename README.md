@@ -1,6 +1,5 @@
 # Kartoza Application
-## Application Screenshots <br>
-
+Done by Blessed Mutengwa, blessedmutengwa@gmail.com
 
 ## Requirements
 To be able to run the Application on a local machine, please run the following command without quotes to install the application dependencies and supporting apps:<br>
@@ -27,3 +26,36 @@ To run the application, you will need to locate the root directory for the proje
 
 ## Online Link
 To access the deployed online application, you can visit the link https://pydev99.pythonanywhere.com/
+
+## Application Screenshots <br>
+### Database [User Table]
+<img src="media/screenshots/img_1.png">
+
+### Database [Extended User to Profile's Table]
+<img src="media/screenshots/img.png">
+
+### Application [Index Page]
+<img src="media/screenshots/img_2.png">
+
+### Application [Login Page]
+<img src="media/screenshots/img_3.png">
+
+### Application [Signup Page]
+<img src="media/screenshots/img_4.png">
+
+### Application [Home Page for a user who is also a superuser]
+#### _Application Routes has Url for logged-in user current profile and Url for All users since the logged-in user is a super-user_
+<img src="media/screenshots/img_5.png">
+
+### Application [All Users Page -> Available only to a Super User]
+<img src="media/screenshots/img_6.png">
+
+### Application [User Profile - Where a user can edit their profile]
+<img src="media/screenshots/img_7.png">
+
+### Application [Home Page for a general user]
+#### _Application Routes has Urls for All users since the logged-in user is a super-user_
+<img src="media/screenshots/img_8.png">
+
+### Application [General User Profile Edit Page]
+<img src="media/screenshots/img_10.png">
