@@ -17,7 +17,7 @@ jobs:
         include:
           - db: postgres
             db_user: 'kartoza'
-            db_password: '@Support1999'
+            db_password: ''
 
     steps:
     - uses: actions/checkout@v2
