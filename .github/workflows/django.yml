@@ -12,15 +12,12 @@ jobs:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
-        db: [sqlite, postgres, mysql]
-        python-version: [3.6, 3.7, 3.8]
+        db: [postgres]
+        python-version: [3.8, 3.9, 3.10]
         include:
           - db: postgres
             db_user: runner
             db_password: ''
-          - db: mysql
-            db_user: root
-            db_password: root
 
     steps:
     - uses: actions/checkout@v2
