@@ -40,7 +40,6 @@ jobs:
     - name: Grant Database Privileges
       run: |
         sudo -u postgres psql
-        postgres=# create database mydb;
         grant all privileges on all tables in schema public to kartoza;
     - name: Run Tests
       env:
