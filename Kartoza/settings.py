@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-80y9&+sw0#s_@+ph8-4(&ogs61m9+cdub!=(yg+77^pzba1a$&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 # Application definition
 
@@ -169,3 +169,6 @@ LOCATION_FIELD = {
     'search.provider': 'google',
     'search.suffix': '',
 }
+
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
