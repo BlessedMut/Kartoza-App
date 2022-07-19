@@ -16,8 +16,8 @@ jobs:
         python-version: [3.10.5]
         include:
           - db: postgres
-            db_user: ${{secrets.DB_USER}}
-            db_password: ${{secrets.DB_PASSWORD}}
+            db_user: 'kartoza'
+            db_password: '@Support1999'
 
     steps:
     - uses: actions/checkout@v2
