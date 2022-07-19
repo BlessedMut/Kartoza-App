@@ -25,19 +25,11 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
-        
-    - name: Quality Check for DB Sockets
-      run: |
-        rm /usr/local/var/postgres/postmaster.pid
-        brew services restart postgresql
     - name: Start PostgreSQL
       if: matrix.db == 'postgres'
       run: |
         sudo systemctl start postgresql.service
         sudo -u postgres createuser -s kartoza
-    - name: Grant Database Privileges
-      run: |
-        psql -c 'GRANT ALL PRIVILEGES ON ALL TABLES in schema PUBLIC TO kartoza;'
     - name: Install GDAL Libraries
       run: |
         sudo apt-get install binutils libproj-dev gdal-bin
