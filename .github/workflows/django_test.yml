@@ -1,4 +1,4 @@
-name: Django CI Kartoza App
+name: Django CI
 
 on:
   push:
