@@ -53,7 +53,7 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Install GDAL Libraries
+      - name: Install GDAL Libraries and BinUtils
         run: |
           sudo apt-get install binutils libproj-dev gdal-bin
       - name: Install requirements
